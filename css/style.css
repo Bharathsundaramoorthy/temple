@@ -1,0 +1,22 @@
+.img-responsive
+{
+  width: 100%;
+  height: auto;
+  display:block;
+}
+.t_nav_ul
+{
+    background-color: chartreuse;
+    padding: 20px;
+    margin-bottom: 0;
+}
+.t_nav_li
+{
+    list-style: none;
+    display: inline;
+    padding: 0 60px;
+}
+.t_footer
+{
+  text-align: center;
+}

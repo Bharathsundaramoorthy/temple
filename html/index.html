@@ -1,10 +1,133 @@
+<!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.css" />
+  <link rel="stylesheet" type="text/css" href="../css/swiper.min.css">
   <link rel="stylesheet" type="text/css" href="../css/style.css" />
 </head>
 <body>
-<p>Hi da Joseph</p>
+<div class="container-fluid">
+  <section class="row t_header">
+    <header class="container">
+        <div class="row">
+          <div class="col-md-2">
+            <img src="../img/god_shiva.jpg" class="img-responsive" />
+          </div>
+          <div class="col-md-10">
+            <h2 class="text-center">Kodumanal Sri Thangamman Temple</h2>
+          </div>
+        </div>
+    </header>
+  </section>
+  <section class="row t_nav">
+    <div class="container">
+      <nav class="t_navbar">
+        <ul class="t_nav_ul">
+          <li class="t_nav_li">
+            <a href="#">Home</a>
+          </li>
+          <li class="t_nav_li">
+            <a href="#">History</a>
+          </li>
+          <li class="t_nav_li">
+            <a href="#">Yearly Schedule</a>
+          </li>
+          <li class="t_nav_li">
+            <a href="#">Gallery</a>
+          </li>
+          <li class="t_nav_li">
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <section class="row gallery">
+    <div class="container">
+    <!-- Swiper -->
+    <div class=" swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../img/image-slider-1.jpg" class="img-responsive" />
+          <h1>Title Slide 1</h1>
+        </div>
+        <div class="swiper-slide"><img src="../img/image-slider-2.jpg" class="img-responsive" />
+          <h1>Title Slide 2</h1>
+        </div>
+        <div class="swiper-slide"><img src="../img/image-slider-3.jpg" class="img-responsive" />
+          <h1>Title Slide 3</h1>
+        </div>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    </div>
+    </div>
+  </section>
+  <section class="row t_main_content">
+    <div class="container">
+      <div class="col-md-8">
+        <!-- main content-->
+      </div>
+      <div class="col-md-4">
+        <!-- side bar-->
+      </div>
+    </div>
+  </section>
+  <section class="row t_footer">
+    <div class="container">
+      <footer>
+        <div class="t_footer">
+          &copy; 2018&nbsp;|&nbsp;Eighthturn.com
+        </div>
+      </footer>
+    </div>
+  </section>
+</div>
 </body>
 <script src="../js/master.js"></script>
+<script src="../js/swiper.min.js"></script>
+<script>
+  var swiper = new Swiper('.swiper-container',{
+// Optional parameters
+direction: 'horizontal',
+// autoHeight: true, //enable auto height
+ loop: true,
+ //slidesPerView: 3,
+ //spaceBetween: 10,
+ effect:"slide",
+ speed:5000,
+// autoplay:true,
+ initialSlide:0,
+
+ //onlyExternal:true,
+ //noSwiping:true,
+ //allowSlidePrev:false,
+   autoplay:
+    {
+      delay: 1000,
+      disableOnInteraction:false,
+    },
+  navigation:
+    {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+
+
+    pagination:
+    {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+
+
+
+  });
+</script>
 </html>
