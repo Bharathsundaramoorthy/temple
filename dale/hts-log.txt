@@ -1,0 +1,30 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 28 Feb 2018 17:10:05 at http://www.ethemes.com/demo/Dale/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" http://www.ethemes.com/demo/Dale/ -O1 "C:\Users\Bharath\Desktop\Templates\dale" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+17:14:12	Warning: 	file not stored in cache due to bogus state (broken size, expected 12110138 got 1408666): www.ethemes.com/demo/Dale/videos/CameraLens/CameraLens.mp4
+17:15:52	Warning: 	file not stored in cache due to bogus state (broken size, expected 4044525 got 2012507): www.ethemes.com/demo/Dale/videos/CameraLens/CameraLens.ogv
+17:17:51	Warning: 	file not stored in cache due to bogus state (broken size, expected 3202428 got 1354266): www.ethemes.com/demo/Dale/videos/RecordPlayer/RecordPlayer.webm
+17:25:56	Error: 	"Not Found" (404) at link ethemes.com/demo/Dale/images/blank.gif (from www.ethemes.com/demo/Dale/)
+17:25:56	Error: 	"Not Found" (404) at link ethemes.com/demo/Dale/videos/CameraLens/CameraLens.jpg (from www.ethemes.com/demo/Dale/)
+17:25:56	Warning: 	Retry after error -4 (Incorrect length (1408666 Bytes, 12110138 expected)) at link www.ethemes.com/demo/Dale/videos/CameraLens/CameraLens.mp4 (from www.ethemes.com/demo/Dale/)
+17:29:07	Warning: 	file not stored in cache due to bogus state (broken size, expected 12110138 got 2939671): www.ethemes.com/demo/Dale/videos/CameraLens/CameraLens.mp4
+17:36:42	Warning: 	Retry after error -4 (Incorrect length (2012507 Bytes, 4044525 expected)) at link www.ethemes.com/demo/Dale/videos/CameraLens/CameraLens.ogv (from www.ethemes.com/demo/Dale/)
+17:39:09	Warning: 	file not stored in cache due to bogus state (broken size, expected 4044525 got 3334075): www.ethemes.com/demo/Dale/videos/CameraLens/CameraLens.ogv
+17:39:32	Warning: 	Retry after error -4 (Incorrect length (1354266 Bytes, 3202428 expected)) at link www.ethemes.com/demo/Dale/videos/RecordPlayer/RecordPlayer.webm (from www.ethemes.com/demo/Dale/)
+17:39:32	Error: 	"Not Found" (404) at link ethemes.com/demo/Dale/images/design/blank.jpg (from www.ethemes.com/demo/Dale/)
+17:39:33	Error: 	"Not Found" (404) at link ethemes.com/demo/Dale/css/masterslider/loading-2.gif (from www.ethemes.com/demo/Dale/css/masterslider/masterslider.css)
+17:39:33	Error: 	"Not Found" (404) at link ethemes.com/demo/Dale/css/masterslider/grab.png (from www.ethemes.com/demo/Dale/css/masterslider/masterslider.css)
+17:39:33	Error: 	"Not Found" (404) at link ethemes.com/demo/Dale/css/masterslider/grabbing.png (from www.ethemes.com/demo/Dale/css/masterslider/masterslider.css)
+17:39:33	Error: 	"Not Found" (404) at link ethemes.com/demo/Dale/css/grabbing.png (from www.ethemes.com/demo/Dale/css/owl.carousel.css)
+17:39:33	Warning: 	Retry after error -4 (Incorrect length (2939671 Bytes, 12110138 expected)) at link www.ethemes.com/demo/Dale/videos/CameraLens/CameraLens.mp4 (from www.ethemes.com/demo/Dale/)
+17:39:33	Warning: 	Retry after error -4 (Incorrect length (3334075 Bytes, 4044525 expected)) at link www.ethemes.com/demo/Dale/videos/CameraLens/CameraLens.ogv (from www.ethemes.com/demo/Dale/)
+17:42:07	Warning: 	file not stored in cache due to bogus state (broken size, expected 12110138 got 4345557): www.ethemes.com/demo/Dale/videos/CameraLens/CameraLens.mp4
+17:42:25	Error: 	"Incorrect length (4345557 Bytes, 12110138 expected)" (-4) after 2 retries at link www.ethemes.com/demo/Dale/videos/CameraLens/CameraLens.mp4 (from www.ethemes.com/demo/Dale/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 32 minutes 20 seconds : 121 links scanned, 107 files written (42789998 bytes overall) [46887607 bytes received at 24168 bytes/sec], 439191 bytes transferred using HTTP compression in 16 files, ratio 17%, 1.6 requests per connection
+(8 errors, 11 warnings, 0 messages)
