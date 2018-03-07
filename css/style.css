@@ -53,3 +53,8 @@ h3
   background-color:#008B8B;
   padding:50px;
 }
+.t_nav .container-fluid, .gallery .container-fluid
+{
+	padding-right: 0;
+	padding-left: 0;
+}
