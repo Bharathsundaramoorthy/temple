@@ -1,0 +1,90 @@
+/*==================     Subscribe Form     ======================*/
+.subscribe-form {
+  position: relative;
+  display: block; }
+  .subscribe-form label {
+    display: inline-block;
+    position: relative;
+    padding: 4px 5px 4px;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    .subscribe-form label + label {
+      margin-top: 10px; }
+  .subscribe-form label.name {
+    width: 100%; }
+  .subscribe-form label.email {
+    width: 100%; }
+  .subscribe-form input {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    vertical-align: baseline;
+    box-shadow: none;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+    height: 22px; }
+  .subscribe-form a[data-type="submit"] {
+    display: inline-block;
+    padding: 16px 65px;
+    color: #00aeef;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    background: #fff;
+    border-radius: 20px; }
+    .subscribe-form a[data-type="submit"]:hover {
+      background: #f7941d;
+      color: #fff; }
+    .subscribe-form a[data-type="submit"]:active {
+      background: #d97a08; }
+    * + .subscribe-form a[data-type="submit"] {
+      margin-top: 37px; }
+
+.subscribe-form .error, .subscribe-form .success {
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -7px;
+  text-align: left;
+  padding: 4px 10px;
+  left: 5px;
+  right: 5px;
+  font-size: 10px;
+  line-height: 12px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+.subscribe-form .error {
+  display: none;
+  color: #f00;
+  overflow: hidden;
+  -moz-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease; }
+.subscribe-form label.invalid .error {
+  display: block; }
+.subscribe-form .success {
+  display: none;
+  color: #0f0; }
+
+@media (max-width: 979px) {
+  .subscribe-form label.name,
+  .subscribe-form label.email {
+    display: block;
+    width: 100%; }
+  .subscribe-form * + label,
+  .subscribe-form * + a[data-type='submit'] {
+    margin-top: 20px; } }

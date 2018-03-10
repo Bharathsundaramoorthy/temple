@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Contacts</title>
+  <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no"/>
+  <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/grid.css">
+  <link rel="stylesheet" href="../css/search.css">
+  <link rel="stylesheet" href="../css/subscribe-form.css">
+  <link rel="stylesheet" href="../css/mailform.css">
+  <link rel="stylesheet" href="../css/google-map.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery-migrate-1.2.1.js"></script> 
+
+  <!--[if lt IE 9]> 
+  <html class="lt-ie9">
+  <div style=' clear: both; text-align:center; position: relative;'>
+    <a href="http://windows.microsoft.com/en-US/internet-explorer/..">
+      <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820"
+           alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."/>
+    </a>
+  </div>
+  <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <script src='../js/device.min.js'></script>
+</head>
+<body>
+<div class="page">
+  <!--========================================================
+                            HEADER
+  =========================================================-->
+  <header>
+    <div id="stuck_container" class="stuck_container">
+      <div class="container">
+        <div class="brand">
+          <h1 class="brand_name">
+            <a href="./">Hindu temple</a>
+          </h1>
+        </div>
+
+        <div class="header-right">
+          <nav class="nav">
+            <ul class="sf-menu" data-type="navbar">
+              <li>
+                <a href="index.html"><span>About us</span></a>
+              </li>
+              <li>
+                <a href="services.html"><span>Services</span></a>
+              </li>
+              <li>
+                <a href="activities.html"><span>Activities</span></a>
+                <ul>
+                  <li>
+                    <a href="#">Quisque nulla</a>
+                  </li>
+                  <li>
+                    <a href="#">Vestibulum libero nis</a>
+                  </li>
+                  <li>
+                    <a href="#">Porta vel scelerisque eget</a>
+                    <ul>
+                      <li>
+                        <a href="#">Lorem</a>
+                      </li>
+                      <li>
+                        <a href="#">Dolor</a>
+                      </li>
+                      <li>
+                        <a href="#">Sit amet</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Malesuada at neque</a>
+                  </li>
+                  <li>
+                    <a href="#">Vivamus eget nibh</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="news.html"><span>News & Media</span></a>
+              </li>
+              <li class="active">
+                <a href="contacts.html"><span>Contacts</span></a>
+              </li>
+            </ul>
+          </nav>
+
+          <a class="search-form_toggle" href="#"></a>
+
+          <form class="search-form" action="search.php" method="GET" accept-charset="utf-8">
+            <label class="search-form_label">
+              <input class="search-form_input" type="text" name="s" autocomplete="off" placeholder="Search.."/>
+              <span class="search-form_liveout"></span>
+            </label>
+            <button class="search-form_submit fa-search" type="submit"></button>
+          </form>
+        </div>   
+      </div>
+    </div>
+
+  </header>
+  <!--========================================================
+                            CONTENT
+  =========================================================-->
+  <main>
+    <section class="map">
+      <div id="google-map" class="map_model map_model_1"></div>
+      <ul class="map_locations">
+            <li data-x="-73.9874068" data-y="40.643180">
+          <p>8901 Marmora Road, Glasgow, DO4 89GR.</p>
+        </li>
+      </ul>
+    </section>    
+    <section class="well1 bg1">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <h2>Address</h2>
+            <h5>Ecenistique orci acsem</h5>
+            <p>Aenean nonummy hendrerit maurisellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient</p>
+            <address class="addr">
+              <p>8901 Marmora Road<br>Glasgow, DO4 89GR.</p>
+              <dl>
+                <dt>Freephone:</dt>
+                <dd><a href="callto:#">+1 800 559 6580</a></dd>
+              </dl>
+              <dl>
+                <dt>Telephone:</dt>
+                <dd><a href="callto:#">+1 800 559 6535</a></dd>
+              </dl>
+              <dl>
+                <dt>FAX:</dt>
+                <dd><a href="callto:#">+1 800 889 9898</a></dd>
+              </dl>
+              <br>
+              <p>E-mail: <a href="mailto:#">mail@demolink.org</a></p>
+            </address>
+          </div>
+          <div class="col-xs-12 col-sm-8">
+            <h2>Contact form</h2>
+            <form class='mailform' method="post" action="bat/rd-mailform.php"> 
+              <input type="hidden" name="form-type" value="contact"/> 
+              <fieldset> 
+                  <label> 
+                      <input type="text" 
+                      name="name" 
+                      placeholder="Your Name*" 
+                      data-constraints="@LettersOnly @NotEmpty"/> 
+                  </label> 
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                      <label> 
+                          <input type="text" 
+                          name="email" 
+                          placeholder="Your Email" 
+                          data-constraints="@Email"/> 
+                      </label>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                      <label> 
+                          <input type="text" 
+                          name="phone" 
+                          placeholder="Your Phone Number*" 
+                          data-constraints="@Phone @NotEmpty"/> 
+                      </label>
+                    </div>
+                  </div>
+                  <label> 
+                      <textarea name="message" placeholder="Your Message*" 
+                      data-constraints="@NotEmpty"></textarea> 
+                  </label> 
+                  <div class="mfControls"> 
+                    <button class="btn" type="submit">Submit comment</button> 
+                  </div> 
+              </fieldset> 
+          </form> 
+          </div>
+        </div>
+      </div>     
+    </section>
+  </main>
+
+  <!--========================================================
+                            FOOTER
+  =========================================================-->
+  <footer>
+    <section class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <h3>Sign up for updates</h3>
+            <form id="subscribe-form" class="subscribe-form">
+                <label class="name">
+                    <input type="text" value="Name"/>
+                    <span class="error">*Invalid name.</span>
+                </label>
+                <label class="email">
+                    <input type="email" value="Email">
+                    <span class="error">*Invalid email.</span>
+                    <span class="success">Subscription request sent!</span>
+                </label>
+                <a data-type="submit" href="#">Sign up</a>
+            </form> 
+          </div>
+          <div class="col-xs-12 col-sm-offset-1 col-sm-3">
+            <h3>Find us</h3>
+            <address class="addr">
+              <p>8901 Marmora Road<br>Glasgow, DO4 89GR.</p>
+              <dl>
+                <dt>Freephone:</dt>
+                <dd><a href="callto:#">+1 800 559 6580</a></dd>
+              </dl>
+              <dl>
+                <dt>Telephone:</dt>
+                <dd><a href="callto:#">+1 959 603 6035</a></dd>
+              </dl>
+              <dl>
+                <dt>FAX:</dt>
+                <dd><a href="callto:#">+1 800 889 9898</a></dd>
+              </dl>
+              <p class="addr_email">E-mail: <a href="mailto:#">mail@demolink.org</a></p>
+            </address>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <h3>Keep in touch</h3>
+            <ul class="social-list">
+              <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+              <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+              <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+              <li><a href="#"><span class="fa fa-pinterest"></span></a></li>
+              <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer-bottom">
+      <div class="container">
+        <p class="copy">© <span id="copyright-year"></span>  Hindu Temple Theme. <a href="index-5.html">Privacy Policy</a></p>
+      </div>
+    </section>
+  </footer>
+</div>
+
+<script src="../js/script.js"></script>
+</body><!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager -->
+</html>
