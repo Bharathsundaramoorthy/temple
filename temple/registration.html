@@ -9,9 +9,8 @@
   <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="css/search.css">
   <link rel="stylesheet" href="css/subscribe-form.css">
-  <link rel="stylesheet" href="css/mailform.css">
-  <link rel="stylesheet" href="css/google-map.css">
   <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mailform.css">
 
   <script src="js/jquery.js"></script>
   <script src="js/jquery-migrate-1.2.1.js"></script> 
@@ -39,7 +38,7 @@
       <div class="container">
         <div class="brand">
           <h1 class="brand_name">
-            <a href="index.html"></a>
+           <a href="index.html"></a>
           </h1>
         </div>
 
@@ -59,14 +58,15 @@
               <li>
                 <a href="news.html"><span>Administration</span></a>
               </li>
-			   <li>
+			   <li class="active">
                 <a href="registration.html"><span>Registration</span></a>
               </li>
-              <li class="active">
+              <li>
                 <a href="contacts.html"><span>Contacts</span></a>
               </li>
             </ul>
           </nav>
+
         </div>   
       </div>
     </div>
@@ -76,37 +76,11 @@
                             CONTENT
   =========================================================-->
   <main>
-    <section class="map">
-      <div id="google-map" class="map_model map_model_1"></div>
-      <ul class="map_locations">
-            <li data-x="-73.9874068" data-y="40.643180">
-          <p></p>
-        </li>
-      </ul>
-    </section>    
-    <section class="well1 bg1">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <h2>Address</h2>
-            <h5>Heading</h5>
-            <p>Content</p>
-            <address class="addr">
-              <p>Nallur,<br>Tirupur, <br> Tamil Nadu - 641606.</p>
-              <dl>
-                <dt>Freephone:</dt>
-                <dd><a href="callto:#">+91 00 000 00000</a></dd>
-              </dl>
-              <dl>
-                <dt>Telephone:</dt>
-                <dd><a href="callto:#">+91 00 000 00000</a></dd>
-              </dl>
-              <br>
-              <p>E-mail: <a href="mailto:#">mail@domain.extension</a></p>
-            </address>
-          </div>
-          <div class="col-xs-12 col-sm-8">
-            <h2>Contact form</h2>
+    <section class="well2">
+    <div class="container">
+        
+          <div class="col-xs-12 col-sm-12">
+            <h2>Registration form</h2>
             <form class='mailform' method="post" action="bat/rd-mailform.php"> 
               <input type="hidden" name="form-type" value="contact"/> 
               <fieldset> 
@@ -116,15 +90,26 @@
                       placeholder="Your Name*" 
                       data-constraints="@LettersOnly @NotEmpty"/> 
                   </label> 
+				  <div class="row">
+				   <div class="col-xs-12 col-sm-12">
+				  <label> 
+                      <input type="text" 
+                      name="name" 
+                      placeholder="Your Address*" 
+                      data-constraints="@NotEmpty"/> 
+                  </label>
+                  </div>
+                 </div>				  
                   <div class="row">
                     <div class="col-xs-12 col-sm-6">
                       <label> 
-                          <input type="text" 
+                          <input type="text"
                           name="email" 
                           placeholder="Your Email" 
                           data-constraints="@Email"/> 
                       </label>
                     </div>
+					 
                     <div class="col-xs-12 col-sm-6">
                       <label> 
                           <input type="text" 
@@ -133,20 +118,58 @@
                           data-constraints="@Phone @NotEmpty"/> 
                       </label>
                     </div>
+					
                   </div>
+				 <!--s <div class="row">
+					<div class="col-xs-12 col-sm-6">
+                      <label> 
+                          <input type="text" 
+                          name="name" 
+                          placeholder="Your Clan*" 
+                          data-constraints="@LettersOnly @NotEmpty"/>
+                      </label>
+                    </div> 
+					</div>-->
+					<div class="row">
+					<div class="col-xs-12 col-sm-6">
+                     
+					<select name="name">
+                            <option value="@NotEmpty">Choose Community</option>
+							<option value="Kongu vellalar">Kongu vellalar</option>
+							<option value="devar">Devar</option>
+						
+				    </select>
+                    
+                    </div>
+					
+					<div class="col-xs-12 col-sm-6">
+                     
+					<select name="name">
+                            <option value="@NotEmpty">Choose Clan</option>
+							<option value="pandiyan">Pandiyan</option>
+							<option value="cheran">Cheran</option>
+							<option value="kaadai">Panangkaadai</option>
+							<option value="kanakkan">Kanakkan</option>
+				    </select>
+                    
+                    </div>
+					</div>
                   <label> 
-                      <textarea name="message" placeholder="Your Message*" 
-                      data-constraints="@NotEmpty"></textarea> 
+                      <textarea name="message" placeholder="Your Suggesstion*" 
+                      data-constraints="@"></textarea> 
                   </label> 
                   <div class="mfControls"> 
-                    <button class="btn" type="submit">Submit comment</button> 
+                    <button class="btn" type="submit">Register</button> 
                   </div> 
               </fieldset> 
           </form> 
           </div>
         </div>
       </div>     
+       
+      </div>     
     </section>
+
   </main>
 
   <!--========================================================
